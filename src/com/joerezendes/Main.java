@@ -12,5 +12,26 @@ public class Main {
 
         Fruit banana = new Fruit("Banana", 40, "yellow");
         banana.setTasty(true);
+
+        /* INHERITANCE */
+        Dog fluffy = new Dog();
+        fluffy.eat();
+        fluffy.run();
+
+        fluffy.bark();
+
+        Cat whiskers = new Cat();
+        whiskers.run();
+        whiskers.eat();
+
+        whiskers.meow();
+
+        /* STATIC KEYWORD */
+        System.out.println(Animal.numAnimals);
+
+        Animal rat = Animal.generateAnimal();
+        System.out.println(Animal.numAnimals);
+
+        rat.eat();
     }
 }
