@@ -34,6 +34,20 @@ public class Types {
     String message = "Hello World";         // Store a sequence of characters.
 
 
+
+    /* CASTING */
+
+    int loan = 750;
+    float interestRate = 0.0525f;
+
+    float interest = loan * interestRate;
+//        System.out.println(interest);
+
+
+    int x = (int)50.5f + (int)20.6f;
+//        System.out.println(x);
+
+
     /* ARRAYS */
     {
         String student_1 = "john@gmail.com";
@@ -122,5 +136,26 @@ public class Types {
 
     }
 
+
+    /* JAVA METHODS */
+    {
+
+        // factorial(5) = 5! = 5 * 4 * 3 * 2 * 1 = 120
+
+        int factorialed = Factorial(5);
+
+    }
+
+    // outside of main function
+    public static int Factorial(int number) {
+        int fact = number;
+
+        for (int i = number; i >= 1; i--) {
+            fact *= i;
+        }
+
+        return fact;
+
+    }
 
 }

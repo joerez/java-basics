@@ -4,16 +4,13 @@ public class Main {
 
     public static void main(String[] args) {
 
-        /* CASTING */
+        /* classes and objects */
+        Fruit apple = new Fruit();
+        apple.setName("Apple");
+        apple.color = "Red";
+        apple.sugarContent = 20;
 
-        int loan = 750;
-        float interestRate = 0.0525f;
-
-        float interest = loan * interestRate;
-        System.out.println(interest);
-
-
-        int x = (int)50.5f + (int)20.6f;
-        System.out.println(x);
+        Fruit banana = new Fruit("Banana", 40, "yellow");
+        banana.setTasty(true);
     }
 }
