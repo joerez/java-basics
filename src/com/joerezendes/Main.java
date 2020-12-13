@@ -20,6 +20,10 @@ public class Main {
 
         fluffy.bark();
 
+
+        ITalkAble sparky = new Dog();
+        sparky.Talk();
+
         Cat whiskers = new Cat();
         whiskers.run();
         whiskers.eat();

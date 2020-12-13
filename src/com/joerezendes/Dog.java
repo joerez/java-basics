@@ -1,6 +1,6 @@
 package com.joerezendes;
 
-public class Dog extends Animal {
+public class Dog extends Animal implements ITalkAble {
     public Dog() {
         this.species = "Dog";
     }
@@ -13,4 +13,8 @@ public class Dog extends Animal {
         System.out.println(this.species + " is chewing on a bone");
     }
 
+    @Override
+    public void Talk() {
+        System.out.println("This Dog really likes you.");
+    }
 }
