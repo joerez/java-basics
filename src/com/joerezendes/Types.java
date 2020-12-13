@@ -1,5 +1,9 @@
 package com.joerezendes;
 
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.HashMap;
+
 public class Types {
     /* DATA TYPES */
 
@@ -59,5 +63,52 @@ public class Types {
 
     }
 
+
+    /* ARRAY LIST */
+    {
+
+        ArrayList<String> mails = new ArrayList<>();
+
+        mails.add("john@yahoo.com");
+        mails.add("rick@yahoo.com");
+        mails.add("dan@yahoo.com");
+        mails.add("dave@yahoo.com");
+
+        mails.set(0, "john@gmail.com"); // change the 0th index.
+
+        mails.remove(1);
+
+        int mailsLength = mails.size();
+
+        mails.clear();
+
+        Collections.sort(mails); // sort in alphabetical order
+
+
+    }
+
+
+
+    /* HASH MAP */
+    {
+        // key value pair
+        HashMap<String, String> capitals = new HashMap<>();
+
+        capitals.put("Mexico", "Mexico City");
+        capitals.put("Germany", "Berlin");
+        capitals.put("France", "Paris");
+        capitals.put("USA", "Washington DC");
+
+        String germanyCapital = capitals.get("Germany");
+
+        capitals.remove("France");
+
+        int capitalsLength = capitals.size();
+
+        for (String s : capitals.keySet()) {
+            String city = capitals.get(s);
+        }
+
+    }
 
 }
