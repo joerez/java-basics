@@ -85,6 +85,17 @@ public class Types {
         Collections.sort(mails); // sort in alphabetical order
 
 
+        /* FOR EACH LOOP */
+
+        String[] names = {"Johnny", "Martin", "George"};
+
+        // for each
+        for(String name: names) {
+            // System.out.println(name);
+        }
+
+
+
     }
 
 
@@ -110,5 +121,6 @@ public class Types {
         }
 
     }
+
 
 }
