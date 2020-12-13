@@ -136,6 +136,13 @@ public class Types {
 
     }
 
+    /* ENUMS */
+
+    enum Difficulty { EASY, MEDIUM, HARD }
+
+    {
+        Difficulty gameDifficulty = Difficulty.HARD;
+    }
 
     /* JAVA METHODS */
     {
